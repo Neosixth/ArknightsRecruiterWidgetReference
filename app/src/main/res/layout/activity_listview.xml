@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+
+<!--
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#0D0906"
+    android:fontFamily="@font/arial"
+    android:padding="5dip"
+    android:textColor="#0D0906"
+    android:lineHeight="221.1dp"
+    android:textSize="16dip">
+
+
+    android:textColor="#0D0906"
+    -->
+<com.neosixth.arknightsrecruiterwidgetreference.UnderlinedTextView android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#0D0906"
+    android:fontFamily="@font/arial"
+    android:padding="5dip"
+    android:textColor="#FFFFFF"
+    android:textSize="16dip"
+    app:underlineColor="#000000"
+    app:underlineWidth="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+</com.neosixth.arknightsrecruiterwidgetreference.UnderlinedTextView>
+
+
+
+
+
+
+
+
+
+    <!--
+    android:background="#0D0906"
+
+    android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dip"
+    android:textSize="16dip"
+    android:background="#000000"
+    android:textColor="#FFFFFF"
+    -->
+<!--
+</TextView>
+-->

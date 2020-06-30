@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+
+    <!-- From this point onwards, each new page needs its own RelativeLayout. Check Arknights Recruiter Widget for reference-->
+    <RelativeLayout
+        android:id="@+id/expanded1"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/layout_roundedbgblack"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <!--
+        android:background="#D3D3D3"
+        android:background="#BEBEBE"
+        -->
+
+        <ImageView
+            android:id="@+id/expanded1AUX"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/ocrOutputXML"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000000"
+            android:scrollbars="vertical"
+            android:text="Empty"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+        <!--
+        android:background="#000000"
+        android:background="@drawable/kofiblue"
+
+        -->
+
+        <ImageView
+            android:id="@+id/bKofiXML"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="87dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="30dp"
+            android:background="@drawable/kofiblue" />
+
+
+        <ListView
+            android:id="@+id/outputListView"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/bScanXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Scan"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bGuaranteedXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#000000"
+            android:minWidth="120dp"
+            android:text="Guaranteed"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bManualXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Manual"
+            android:textColor="#FFFFFF" />
+
+        <!--
+        <WebView
+            android:id="@+id/wv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            />
+            -->
+
+
+
+
+
+        <!--
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        -->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/expandedG"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/layout_roundedbgblack"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/outputFieldMobi6"
+            android:layout_width="170dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/layoutExpanded6"
+            android:background="#000000"
+            android:text="loading...."
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/layoutExpanded6"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ListView
+            android:id="@+id/outputList6"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_below="@id/layoutExpanded6"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/bPrevXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Prev"
+            android:textColor="#FFFFFF" />
+        <!--
+
+        <Button
+            android:id="@+id/bPrev6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/bReset6"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Prev"
+            android:textColor="#FFFFFF" />
+            -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/expandedKofi"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/layout_roundedbgblack"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/wv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#BEBEBE"
+            />
+        <!--
+        ori: top 67 btm 90
+
+        -->
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/zzzcat"
+            />
+
+        <TextView
+            android:id="@+id/kofiTextXML"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="vertical"
+            android:fontFamily="@font/gotham"
+
+            android:text="Please consider buying me coffee if you enjoyed this widget!"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/bPrevKofiXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Prev"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/expandedManual"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/layout_roundedbgblack"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bSeniorOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Senior"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bTopOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@id/bSeniorOperator"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Top"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bMelee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bTopOperator"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Melee"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bRanged"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bTopOperator"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/bMelee"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Ranged"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bGuard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bRanged"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Guard"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bMedic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bRanged"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bGuard"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Medic"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bVanguard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bGuard"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="90dp"
+                    android:text="Vanguard"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bCaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bGuard"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bVanguard"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Caster"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSniper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bVanguard"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Sniper"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bDefender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bVanguard"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bSniper"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Defender"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSupporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSniper"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="100dp"
+                    android:text="Supporter"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSpecialist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSupporter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#000000"
+                    android:minWidth="100dp"
+                    android:text="Specialist"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bHealing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSpecialist"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Healing"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSpecialist"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bHealing"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Support"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bDPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bHealing"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="DPS"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bAoE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bHealing"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bDPS"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="AoE"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bAoE"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Slow"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bSurvival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bAoE"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bSlow"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Survival"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bDefense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSurvival"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Defense"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bDebuff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSurvival"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/bDefense"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Debuff"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bShift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bDebuff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Shift"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bNuker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bDebuff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/bShift"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Nuker"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:id="@+id/bSummon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bNuker"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="80dp"
+                    android:text="Summon"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:id="@+id/bCrowdControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bSummon"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="140dp"
+                    android:text="Crowd Control"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bFastRedeploy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bCrowdControl"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="140dp"
+                    android:text="Fast-Redeploy"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bDPRecovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bFastRedeploy"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:minWidth="140dp"
+                    android:text="DP-Recovery"
+                    android:textColor="#FFFFFF" />
+
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/bEnterXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Enter"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bPrevFromManualXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Prev"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bResetXML"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
+            android:minWidth="70dp"
+            android:text="Reset"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+    <!--End of Widget main display-->
+
+
+
+
+    <!-- Widget main icon layout -->
+    <ImageView
+        android:id="@+id/widgetMainIcon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/layout_roundedbg"
+        android:src="@drawable/ak_widget_main_icon"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/cross2"
+        android:visibility="gone" />
+
+    <!-- this is the collapsed layout -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/layoutCollapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"></RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
